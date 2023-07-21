@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="moe.css">
+    <script src="moe.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="middle">
+            <h1 class="title">Margin of Error Calculator</h1>
+            <p class="make">&#169;Cristian Fernandez</p>
+            <label for="confidence">Confidence Level (%)</label>
+            <input type="text" id="confidence" />
+            <label for="z">Z-Score / Critical Value</label>
+            <input type="text" id="z" />
+            <label for="s">Standard Deviation</label>
+            <input type="text" id="s" />
+            <label for="p">Sample Proportion [type 0 (zero) if unavailable]</label>
+            <input type="text" id="p" />
+            <label for="n">Sample Size</label>
+            <input type="text" id="n" />
+            <button id="compute" onclick="compMoe()">Compute</button>
+            <div class="ans">
+                <div id="solution2" style="display: none;">
+                    <p>Solution:</p>
+                    <p id="sol2"><span id="zz2">z</span> * (&#x221A; <span id="pp2">p</span> * (1- <span id="pp1">p</span> ) / <span id="nn2">n</span> )</p>
+                    <p id="xmoe2"></p>
+                    <p id="perc2"></p>
+                </div>
+                <div id="solution1" style="display: none;">
+                    <p>Solution:</p>
+                    <p id="sol1"><span id="zz1">z</span> * (<span id="ss1">s</span> / &#x221A; <span id="nn1">n</span> )</p>
+                    <p id="xmoe1"></p>
+                    <p id="perc1"></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
