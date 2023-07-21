@@ -13,7 +13,7 @@ function compMoe() {
         document.getElementById("solution1").style.display = "block";
         document.getElementById("solution2").style.display = "none";
         document.getElementById("zz1").innerHTML = z;
-        document.getElementById("ss1").innerHTML = p;
+        document.getElementById("ss1").innerHTML = s;
         document.getElementById("nn1").innerHTML = n;
 
     } else if (p > 0) {
