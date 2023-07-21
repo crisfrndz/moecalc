@@ -25,7 +25,7 @@ function compMoe() {
         document.getElementById("xmoe2").innerHTML = "MOE: " + moe.toFixed(3);
         document.getElementById("perc2").innerHTML = "Percentage: " + moepercent.toFixed(2) + "%"; 
         document.getElementById("zz2").innerHTML = z;
-        document.getElementById("pp2").innerHTML = p;
+        document.getElementById("pp1").innerHTML = p;
         document.getElementById("nn2").innerHTML = n;
 
     } else {
